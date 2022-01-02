@@ -40,7 +40,7 @@
             position: relative;
             padding-top: 229px;
             padding-bottom: 158px;
-            background:linear-gradient(150deg,  rgba(2,6,9,0.93) 33%,  rgba(2,6,9,0) 77%), url("{{asset('front/img_bg_slider_home01.jpg')}}") no-repeat fixed center center ;
+            background:linear-gradient(150deg,  rgba(2,6,9,0.93) 33%,  rgba(2,6,9,0) 77%), url("{{asset($content->header_image)}}") no-repeat fixed center center ;
             z-index: 100;
             background-size: cover;
         }
@@ -120,7 +120,7 @@
 
                                         </div>
                                         <div class="wrap-video">
-                                            <a href="https://www.youtube.com/watch?v=ySd-XWQWhbI" class="popup-youtube">
+                                            <a href="https://www.youtube.com/watch?v={{$content->video}}" class="popup-youtube">
                                                 <i class="fas fa-play"></i>
                                             </a>
                                         </div>
