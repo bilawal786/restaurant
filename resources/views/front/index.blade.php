@@ -6,7 +6,7 @@
     <!-- Basic Page Needs -->
     <meta charset="utf-8">
     <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
-    <title>Site name</title>
+    <title>{{$gs->sitename}}</title>
 
     <meta name="author" content="themesflat.com" />
 
@@ -57,6 +57,14 @@
             cursor: pointer;
             width: 100%;
         }
+        .p-100{
+            padding: 100px;
+        }
+        @media only screen and (max-width: 600px) {
+           .p-100{
+               padding: 0px;
+           }
+        }
     </style>
 </head>
 
@@ -70,9 +78,9 @@
         <header id="site-header">
             <div id="site-header-inner" class="container-fluid">
                 <div class="wrap-inner flex">
-                    <div id="site-logo" class="cleafix">
+                    <div class="cleafix">
                         <a href="{{route('front.index')}}" class="logo">
-                            <img style="height: 50px" src="{{asset('front/assets/img/logo/logo.png')}}" alt="">
+                            <img style="height: 50px" src="{{asset($gs->logo)}}" alt="">
                         </a>
                     </div>
                     <div class="mobile-button">
@@ -90,7 +98,7 @@
                     </nav><!-- /#main-nav -->
                     <div class="header-contact">
 									<span class="address">
-										+012 (345) 6789
+										{{$gs->phone}}
 									</span>
                     </div>
                 </div>
@@ -148,24 +156,24 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <img src="{{asset('front/a.PNG')}}" class="img-rounded" alt="Cinque Terre" width="100%">
+                        <img src="{{asset($content->image_1)}}" class="img-rounded" alt="Cinque Terre" width="100%">
                     </div>
                     <div class="col-md-6">
-                        <img src="{{asset('front/b.PNG')}}" class="img-rounded" alt="Cinque Terre" width="100%">
+                        <img src="{{asset($content->image_2)}}" class="img-rounded" alt="Cinque Terre" width="100%">
                     </div>
                 </div>
                 <div class="row mt-5">
                     <div class="col-md-6">
-                        <img src="{{asset('front/c.PNG')}}" class="img-rounded" alt="Cinque Terre" width="100%">
+                        <img src="{{asset($content->image_3)}}" class="img-rounded" alt="Cinque Terre" width="100%">
                     </div>
                     <div class="col-md-6">
-                        <img src="{{asset('front/d.PNG')}}" class="img-rounded" alt="Cinque Terre" width="100%">
+                        <img src="{{asset($content->image_4)}}" class="img-rounded" alt="Cinque Terre" width="100%">
                     </div>
                 </div>
             </div>
             <div class="container">
-                <div class="row text-center" style="padding: 100px">
-                    <div class="col-md-12">
+                <div class="row text-center p-100">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
                         <h1 style="font-size: 50px">BIEN ÊTRE AU TRAVAIL</h1>
                     </div>
                     <div class="col-md-12">
@@ -181,82 +189,40 @@
             <div class="container mt-5">
                 <div class="row">
                     <div class="col-md-6">
-                        <h1>
-                            <b>
-                                La pause déj' devient un régal
-                            </b>
-                        </h1>
-                        <h3>
-                            Installez une cantine d'entreprise n'a jamais été aussi simple. Vous n'avez rien à faire, on s'occupe de tout.
-                        </h3>
-                            <h3><b>■ Mise en place en 48h</b></h3>
-                            <h3><b>■ Sans engagement</b></h3>
-                            <h3><b>■ Accompagnement</b></h3>
-                          <h3><b>■ Gestion simplifiée</b></h3>
+                       {!! $content->d_1 !!}
                     </div>
                     <div class="col-md-6">
-                        <img src="{{asset('front/img.png')}}" class="img-rounded" alt="Cinque Terre" width="100%">
+                        <img src="{{asset($content->image_5)}}" class="img-rounded" alt="Cinque Terre" width="100%">
                     </div>
                 </div>
             </div>
             <div class="container mt-5">
                 <div class="row">
                     <div class="col-md-6">
-                        <img src="{{asset('front/img_1.png')}}" class="img-rounded" alt="Cinque Terre" width="100%">
+                        <img src="{{asset($content->image_6)}}" class="img-rounded" alt="Cinque Terre" width="100%">
                     </div>
                     <div class="col-md-6">
-                        <h1>
-                            <b>
-                                Flexibilité et autonomie
-                            </b>
-                        </h1>
-                        <h3>
-                            Car nous connaissons l'importance de vos collaborateurs, MamiKook s'adapte à vos besoins en vous proposant une solution sur mesure.
-                        </h3>
-                        <h3><b>■Livraison quotidienne</b></h3>
-                        <h3><b>■ Espace personnalisé</b></h3>
+                        {!! $content->d_2 !!}
                     </div>
                 </div>
             </div>
             <div class="container mt-5">
                 <div class="row">
                     <div class="col-md-6">
-                        <h1>
-                            <b>
-                                Une cantine connectée qui convient à tout le monde
-                            </b>
-                        </h1>
-                        <h3>
-                            Rendez vos collaborateurs heureux! Un plaisir à portée de main car les commandes se font sur l'application.
-                        </h3>
-                        <h3><b>■ Plats cuisinés et variés</b></h3>
-                        <h3><b>■ Commande en ligne sur l'application Mamikook</b></h3>
-                        <h3><b>■ Livraison offerte</b></h3>
-                        <h3><b>■ Carte renouvelée chaque semaine</b></h3>
+                        {!! $content->d_3 !!}
                     </div>
                     <div class="col-md-6">
-                        <img src="{{asset('front/img_2.png')}}" class="img-rounded" alt="Cinque Terre" width="100%">
+                        <img src="{{asset($content->image_7)}}" class="img-rounded" alt="Cinque Terre" width="100%">
                     </div>
                 </div>
             </div>
             <div class="container mt-5">
                 <div class="row">
                     <div class="col-md-6">
-                        <img src="{{asset('front/img_3.png')}}" class="img-rounded" alt="Cinque Terre" width="100%">
+                        <img src="{{asset($content->image_8)}}" class="img-rounded" alt="Cinque Terre" width="100%">
                     </div>
                     <div class="col-md-6">
-                        <h1>
-                            <b>
-                                Une cantine humaine et engagée
-                            </b>
-                        </h1>
-                        <h3>
-                            Une équipe engagée sur des thèmes qui nous tiennent à cœur.
-                        </h3>
-                        <h3><b>■ Produits locaux</b></h3>
-                        <h3><b>■ Packaging écologique</b></h3>
-                        <h3><b>■ Cuisiniers expérimentés</b></h3>
-                        <h3><b>■ Livreurs en CDI</b></h3>
+                        {!! $content->d_4 !!}
                     </div>
                 </div>
             </div>
@@ -265,19 +231,16 @@
                     <div class="col-md-6 mt-5" style="padding: 20px">
                         <h1 style="color: #ff9858">
                             <b>
-                                Livraison de repas en entreprise et sans engagement !
+                                {{$content->h_3}}
                             </b>
                         </h1>
                         <h3>
-                            Pour votre entreprise : zéro engagement et la possibilité de mettre en place une prise en charge employeur.
-                        </h3>
-                        <h3>
-                            Pour vos équipes : aucune attente et la possibilité de régler leurs commandes via l'application ou en titres restaurants.
+                           {{$content->d_5}}
                         </h3>
 
                     </div>
                     <div class="col-md-6">
-                        <img src="{{asset('front/img_4.png')}}" class="img-rounded" alt="Cinque Terre" width="100%">
+                        <img src="{{asset($content->image_9)}}" class="img-rounded" alt="Cinque Terre" width="100%">
                     </div>
                 </div>
             </div>
@@ -289,14 +252,11 @@
                     <div class="col-md-6" style="padding: 20px">
                         <h1 style="color: #ff9858">
                             <b>
-                                Une cantine meilleure pour la santé et meilleure pour la planète.
+                                {{$content->h_4}}
                             </b>
                         </h1>
                         <h3>
-                            Une cuisine maison, équilibrée et diversifiée avec des produits de qualité.
-                        </h3>
-                        <h3>
-                            Une solution écologique grâce à une livraison groupée à l'aide de sacs réutilisables.
+                            {{$content->d_6}}
                         </h3>
 
                     </div>
@@ -305,20 +265,17 @@
             <div class="container mt-5 text-center">
                 <div class="row">
                     <div class="col-md-6" style="padding: 20px">
-                        <img src="{{asset('front/img_5.png')}}" class="img-rounded" alt="Cinque Terre" width="100%">
+                        <img src="{{asset($content->image_10)}}" class="img-rounded" alt="Cinque Terre" width="100%">
 
                     </div>
                     <div class="col-md-6 mt-5">
                         <h1 style="color: #ff9858">
                             <b>
-                                Vos collaborateurs ne pourront plus s'en passer !
+                                {{$content->h_5}}
                             </b>
                         </h1>
                         <h3>
-                            Ils ont le choix parmi des salades, sandwichs, plats et desserts
-                        </h3>
-                        <h3>
-                            chaque jour. Ils bénéficient d'un service pratique sans aucune attente, de tarifs accessibles avec des plats dès 9,90€ et une livraison gratuite.
+                            {{$content->d_7}}
                         </h3>
                     </div>
                 </div>
@@ -329,10 +286,10 @@
                         <img src="{{asset('front/logo.jpeg')}}" class="img-rounded" alt="Cinque Terre" width="100%">
                     </div>
                     <div class="col-md-12">
-                        <h1 style="font-size: 80px; font-weight: 900; color: black">La solution astucieuse pour manger varié au bureau.</h1>
+                        <h1 style="font-size: 80px; font-weight: 900; color: black">{{$content->h_6}}</h1>
                     </div>
                     <div class="col-md-12">
-                        <h1 style="font-size: 40px">NE VOUS SOUCIEZ PLUS DE LA PAUSE DÉJEUNER. VOUS ETES LIVRÉ AU BUREAU AVANT MIDI! QUE DEMANDER DE PLUS ?!
+                        <h1 style="font-size: 40px">{{$content->h_7}}
                         </h1>
                     </div>
                 </div>
@@ -347,16 +304,15 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12">
-                        <div id="site-logo-2" class="logo-footer">
-                            <a href=""><img style="height: 100px" src="{{asset('front/assets/img/logo/logo2.png')}}" alt="images"></a>
+                        <div class="logo-footer">
+                            <a href=""><img style="height: 100px" src="{{asset($gs->logo)}}" alt="images"></a>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="widget widget-link widget-footer">
                             <h4 class="widget-title">À propos de nous</h4>
                             <ul class="widget-list">
-                                <li><a href="">Accueil</a></li>
-                                <li><a href="">Nos Plats</a></li>
+                                <li>{{$gs->footer}}</li>
                             </ul>
                         </div>
                     </div>
@@ -373,9 +329,9 @@
                         <div class="widget widget-link widget-contact widget-footer">
                             <h4 class="widget-title">Contact</h4>
                             <ul class="widget-list">
-                                <li class="adress margin-right-1">56 Main Street, D-Block, 2nd Floor, Melbourne, Australia</li>
-                                <li class="mail">support@gmail.com</li>
-                                <li class="phone">+012 (345) 67 899</li>
+                                <li class="adress margin-right-1">{{$gs->address}}</li>
+                                <li class="mail">{{$gs->email}}</li>
+                                <li class="phone">{{$gs->phone}}</li>
                             </ul>
                         </div>
                     </div>
@@ -388,8 +344,8 @@
                                 <p>Copyright © 2021 . Designed by <a href="https://ikaedigital.com">Ikae Digital</a></p>
                             </div>
                             <ul class="widget widget_socials">
-                                <li><a href="#" class="active"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="{{$gs->facebook}}" class="active"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="{{$gs->instagram}}"><i class="fab fa-instagram"></i></a></li>
                             </ul>
                         </div>
                     </div>

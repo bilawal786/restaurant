@@ -14,3 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'FrontendController@index')->name('front.index');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/general/settings', 'GeneralSettingsController@index')->name('generalsettings.index');
+Route::post('/general/settings/store', 'GeneralSettingsController@store')->name('general.store');
+Route::get('/website/content', 'GeneralSettingsController@content')->name('website.content');
+Route::post('/website/content/store', 'GeneralSettingsController@contentStore')->name('content.store');
