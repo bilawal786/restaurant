@@ -226,13 +226,22 @@ $content = \App\Content::find(1);
                     <!-- scroll-top -->
                     <div class="col-md-12">
                         <div id="bottom" class="tf-bottom-inner">
-                            <div class="Copyright">
-                                <p>Copyright © 2021 . Designed by <a href="https://ikaedigital.com">Ikae Digital</a></p>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="Copyright">
+                                        <p>Copyright © 2021 . Designed by <a href="https://ikaedigital.com">Ikae Digital</a></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <p style="color: white">Propulsé par la banque crédit agricole <img style="height: 30px" src="{{asset('front/img_11.png')}}" alt=""></p>
+                                </div>
+                                <div class="col-md-4">
+                                    <ul class="widget widget_socials">
+                                        <li><a href="{{$gs->facebook}}" class="active"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="{{$gs->instagram}}"><i class="fab fa-instagram"></i></a></li>
+                                    </ul>
+                                </div>
                             </div>
-                            <ul class="widget widget_socials">
-                                <li><a href="{{$gs->facebook}}" class="active"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="{{$gs->instagram}}"><i class="fab fa-instagram"></i></a></li>
-                            </ul>
                         </div>
                     </div>
                 </div>
