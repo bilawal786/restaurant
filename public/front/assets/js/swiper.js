@@ -4,7 +4,7 @@ var swiper =  new Swiper(".mainslider", {
     disableOnInteraction: false,
     },
     slidesPerView: 1,
-    loop: true,
+    loop: false,
     speed: 500,
     effect: "fade",
     fadeEffect: {
@@ -22,7 +22,7 @@ var swiper =  new Swiper(".carousel", {
         disableOnInteraction: false,
         },
     slidesPerView: 1,
-    loop: true, 
+    loop: false,
     spaceBetween: 30,
     navigation: {
         clickable: true,
@@ -49,8 +49,8 @@ var swiper =  new Swiper(".carousel-2", {
         delay: 5000,
         disableOnInteraction: false,
     },
-    slidesPerView: 1,   
-    loop: true,
+    slidesPerView: 1,
+    loop: false,
     spaceBetween: 30,
     navigation: {
         clickable: true,
@@ -77,7 +77,7 @@ var swiper =  new Swiper(".carousel-3", {
         delay: 5000,
         disableOnInteraction: false,
     },
-    slidesPerView: 1,   
+    slidesPerView: 1,
     loop: true,
     spaceBetween: 30,
     pagination: {
@@ -100,8 +100,8 @@ var swiper =  new Swiper(".carousel-4", {
         delay: 5000,
         disableOnInteraction: false,
     },
-    slidesPerView: 2,   
-    loop: true,
+    slidesPerView: 2,
+    loop: false,
     spaceBetween: 30,
     pagination: {
         el: ".swiper-pagination",
@@ -124,8 +124,8 @@ var swiper =  new Swiper(".carousel-5", {
         delay: 5000,
         disableOnInteraction: false,
         },
-    slidesPerView: 1,   
-    loop: true,
+    slidesPerView: 1,
+    loop: false,
     spaceBetween: 30,
     pagination: {
         el: ".swiper-pagination",
@@ -148,8 +148,8 @@ var swiper =  new Swiper(".carousel-6", {
         delay: 5000,
         disableOnInteraction: false,
         },
-    slidesPerView: 1,   
-    loop: true,
+    slidesPerView: 1,
+    loop: false,
     spaceBetween: 30,
     pagination: {
         el: ".swiper-pagination",
@@ -171,8 +171,8 @@ var swiper =  new Swiper(".carousel-7", {
         delay: 5000,
         disableOnInteraction: false,
         },
-    slidesPerView: 1,   
-    loop: true,
+    slidesPerView: 1,
+    loop: false,
     spaceBetween: 30,
     pagination: {
         el: ".swiper-pagination",
@@ -194,8 +194,8 @@ var swiper =  new Swiper(".carousel-auto-with", {
         delay: 5000,
         disableOnInteraction: false,
         },
-    slidesPerView: 1,   
-    loop: true,
+    slidesPerView: 1,
+    loop: false,
     spaceBetween: 30,
     navigation: {
         clickable: true,
@@ -223,7 +223,7 @@ var swiper =  new Swiper(".slider-vertical", {
     spaceBetween: 25,
     slidesPerView: 3,
     centeredSlides: true,
-    loop: true,
+    loop: false,
     navigation: {
         clickable: true,
         nextEl: ".swiper-button-next",
