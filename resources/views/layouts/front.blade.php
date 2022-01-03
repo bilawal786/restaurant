@@ -233,7 +233,7 @@ $content = \App\Content::find(1);
                                     </div>
                                 </div>
                                 <div class="col-md-4">
-                                    <p style="color: white">Propulsé par la banque crédit agricole <img style="height: 30px" src="{{asset('front/img_11.png')}}" alt=""></p>
+                                    <p style="color: white">Propulsé par la banque Crédit Agricole <img style="height: 30px" src="{{asset('front/1111.png')}}" alt=""></p>
                                 </div>
                                 <div class="col-md-4">
                                     <ul class="widget widget_socials">
