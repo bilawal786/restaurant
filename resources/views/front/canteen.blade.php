@@ -34,11 +34,11 @@
                                 Envoyer
                             </button>
                         </div>
-                        <br>
-                        <h4 class="heading"><b>Solution De Restauration Déjà En Place:</b></h4>
-                        <h4 class="heading">Cantine d'entreprise</h4>
-                        <h4 class="heading">Titres restaurants</h4>
-                        <h4 class="heading">Aucun des deux</h4>
+{{--                        <br>--}}
+{{--                        <h4 class="heading"><b>Solution De Restauration Déjà En Place:</b></h4>--}}
+{{--                        <h4 class="heading">Cantine d'entreprise</h4>--}}
+{{--                        <h4 class="heading">Titres restaurants</h4>--}}
+{{--                        <h4 class="heading">Aucun des deux</h4>--}}
                     </form>
                 </div>
             </div>
