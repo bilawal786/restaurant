@@ -13,4 +13,19 @@ class FrontendController extends Controller
        $content = Content::find(1);
        return view('front.index', compact('content', 'gs'));
    }
+   public function canteen(){
+       $gs = GeneralSettings::find(1);
+       $content = Content::find(1);
+       return view('front.canteen', compact('content', 'gs'));
+   }
+   public function miamihome(){
+       $gs = GeneralSettings::find(1);
+       $content = Content::find(1);
+       return view('front.miamihome', compact('content', 'gs'));
+   }
+   public function butre(){
+       $gs = GeneralSettings::find(1);
+       $content = Content::find(1);
+       return view('front.butre', compact('content', 'gs'));
+   }
 }
