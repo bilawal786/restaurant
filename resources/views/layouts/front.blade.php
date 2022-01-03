@@ -80,6 +80,9 @@ $content = \App\Content::find(1);
         .tf-icon-box{
             background-color: #d2ebd5;
         }
+        .container{
+            width: 100% !important;
+        }
     </style>
 </head>
 
@@ -140,18 +143,22 @@ $content = \App\Content::find(1);
                                             </a>
                                         </div>
                                         <div class="buttons-play">
-                                            <button class="btn btn-outline-dark btn-icon-text">
-                                                <i class="fa fa-apple btn-icon-prepend mdi-36px"></i>
-                                                <span class="d-inline-block text-left">
+                                            <a style="color: black" href="{{$content->apple}}">
+                                                <button class="btn btn-outline-dark btn-icon-text">
+                                                    <i class="fa fa-apple btn-icon-prepend mdi-36px"></i>
+                                                    <span class="d-inline-block text-left">
                                                     <small class="font-weight-light d-block">Disponible sur le</small> App Store
                                                 </span>
-                                            </button>
-                                            <button class="btn btn-outline-dark btn-icon-text">
-                                                <i class="fa fa-android btn-icon-prepend mdi-36px"></i>
-                                                <span class="d-inline-block text-left">
+                                                </button>
+                                            </a>
+                                            <a style="color: black" href="{{$content->android}}">
+                                                <button class="btn btn-outline-dark btn-icon-text">
+                                                    <i class="fa fa-android btn-icon-prepend mdi-36px"></i>
+                                                    <span class="d-inline-block text-left">
                                                     <small class="font-weight-light d-block">Obtenez-le sur le</small> Google Play
                                                 </span>
-                                            </button>
+                                                </button>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -181,18 +188,22 @@ $content = \App\Content::find(1);
                         <div class="widget widget-link widget-footer">
                             <h4 class="widget-title">Nos applications</h4>
                             <div class="template-demo mt-2">
-                                <button class="btn btn-outline-dark btn-icon-text">
-                                    <i class="fa fa-apple btn-icon-prepend mdi-36px"></i>
-                                    <span class="d-inline-block text-left">
+                                <a style="color: black" href="{{$content->apple}}">
+                                    <button class="btn btn-outline-dark btn-icon-text">
+                                        <i class="fa fa-apple btn-icon-prepend mdi-36px"></i>
+                                        <span class="d-inline-block text-left">
                                         <small class="font-weight-light d-block">Disponible sur le</small> App Store
                                     </span>
-                                </button>
-                                <button class="btn btn-outline-dark btn-icon-text">
-                                    <i class="fa fa-android btn-icon-prepend mdi-36px"></i>
-                                    <span class="d-inline-block text-left">
+                                    </button>
+                                </a>
+                                <a style="color: black" href="{{$content->android}}">
+                                    <button class="btn btn-outline-dark btn-icon-text">
+                                        <i class="fa fa-android btn-icon-prepend mdi-36px"></i>
+                                        <span class="d-inline-block text-left">
                                         <small class="font-weight-light d-block">Obtenez-le sur le</small> Google Play
                                     </span>
-                                </button>
+                                    </button>
+                                </a>
                             </div>
                         </div>
                     </div>

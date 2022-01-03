@@ -30,6 +30,14 @@ class CreateContentsTable extends Migration
             $table->longText('image_9');
             $table->longText('image_10');
             $table->longText('image_11');
+            $table->longText('image_12');
+            $table->longText('image_13');
+            $table->longText('image_14');
+            $table->longText('image_15');
+            $table->longText('image_16');
+            $table->longText('image_17');
+            $table->longText('image_18');
+            $table->longText('image_19');
 
             $table->longText('d_1');
             $table->longText('d_2');
@@ -38,14 +46,14 @@ class CreateContentsTable extends Migration
             $table->longText('d_5');
             $table->longText('d_6');
             $table->longText('d_7');
-
-            $table->longText('h_1');
-            $table->longText('h_2');
-            $table->longText('h_3');
-            $table->longText('h_4');
-            $table->longText('h_5');
-            $table->longText('h_6');
-            $table->longText('h_7');
+            $table->longText('d_8');
+            $table->longText('d_9');
+            $table->longText('d_10');
+            $table->longText('d_11');
+            $table->longText('d_12');
+            $table->longText('d_13');
+            $table->longText('d_14');
+            $table->longText('d_15');
 
             $table->timestamps();
         });

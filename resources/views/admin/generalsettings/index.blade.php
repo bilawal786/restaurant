@@ -88,6 +88,18 @@
                                         <input type="text" name="instagram" value="{{$gs->instagram}}" class="form-control" required>
                                     </div>
                                 </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="">Android Lien</label>
+                                        <input type="text" name="android" value="{{$gs->android}}" class="form-control" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="">Apple Lien</label>
+                                        <input type="text" name="apple" value="{{$gs->apple}}" class="form-control" required>
+                                    </div>
+                                </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-12">

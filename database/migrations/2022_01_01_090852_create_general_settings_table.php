@@ -23,6 +23,8 @@ class CreateGeneralSettingsTable extends Migration
             $table->string('footer');
             $table->string('facebook');
             $table->string('instagram');
+            $table->string('android');
+            $table->string('apple');
             $table->timestamps();
         });
     }

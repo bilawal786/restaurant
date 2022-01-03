@@ -171,6 +171,21 @@
          $('#summernote3').summernote({
              lang: 'fr'
          })
+         $('#summernote4').summernote({
+             lang: 'fr'
+         })
+         $('#summernote5').summernote({
+             lang: 'fr'
+         })
+         $('#summernote6').summernote({
+             lang: 'fr'
+         })
+         $('#summernote7').summernote({
+             lang: 'fr'
+         })
+         $('#summernote8').summernote({
+             lang: 'fr'
+         })
 
          // CodeMirror
          CodeMirror.fromTextArea(document.getElementById("codeMirrorDemo"), {

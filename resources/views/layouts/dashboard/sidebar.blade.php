@@ -67,7 +67,47 @@
                     <a href="{{route('website.content')}}" class="nav-link">
                         <i class="nav-icon fas fa-ellipsis-h"></i>
                         <p>
-                            Contenu du site Web
+                            Mamikook concept
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{route('admin.company.contacts')}}" class="nav-link">
+                        <i class="nav-icon fas fa-ellipsis-h"></i>
+                        <p>
+                            Creez votre cantine digitale
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{route('admin.mamikkok')}}" class="nav-link">
+                        <i class="nav-icon fas fa-ellipsis-h"></i>
+                        <p>
+                            Mamikook à la maison
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{route('admin.bureau')}}" class="nav-link">
+                        <i class="nav-icon fas fa-ellipsis-h"></i>
+                        <p>
+                            Epicerie au bureau
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{route('admin.contacts')}}" class="nav-link">
+                        <i class="nav-icon fas fa-ellipsis-h"></i>
+                        <p>
+                            Requêtes
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{route('admin.meals')}}" class="nav-link">
+                        <i class="nav-icon fas fa-ellipsis-h"></i>
+                        <p>
+                            Repas
                         </p>
                     </a>
                 </li>

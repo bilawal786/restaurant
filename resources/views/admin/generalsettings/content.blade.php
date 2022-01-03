@@ -58,7 +58,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <hr>
+<!--                            <hr>
                             <div class="row">
                                 <div class="col-md-3">
                                     <div class="form-group">
@@ -104,7 +104,7 @@
                                         <img style="height: 100px" src="{{asset($content->image_4)}}" alt="">
                                     </div>
                                 </div>
-                            </div>
+                            </div>-->
                             <hr>
                             <div class="row">
                                 <div class="col-md-2">
@@ -176,7 +176,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <hr>
+<!--                            <hr>
                             <div class="row">
                                 <div class="col-md-3">
                                     <div class="form-group">
@@ -240,7 +240,7 @@
                                         <input type="text" class="form-control" name="h_7" value="{{$content->h_7}}">
                                     </div>
                                 </div>
-                            </div>
+                            </div>-->
 
                             <button type="submit" class="btn btn-primary">Sauvegarder</button>
                         </div>

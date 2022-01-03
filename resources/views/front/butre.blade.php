@@ -3,14 +3,11 @@
     <div class="container mt-5" id="butre">
         <div class="row">
             <div class="col-md-12">
-                <img style="width: 100%" src="{{asset('front/assets/img/logo/logo.png')}}" alt="">
+                <img style="width: 100%" src="{{asset($content->image_9)}}" alt="">
                 <br>
                 <br>
-                <h1><b>Vos courses de la semaine au prix du supermarché livré au bureau.</b></h1>
-                <h1><b>Pas le temps de faire vos courses pour ce soir?</b></h1>
-                <h1><b>Mamikook pourrait bien vous sauver la mise !</b></h1>
-                <h1><b>Le pionnier en Guadeloupe de la livraison de plats préparés pour le déjeuner va proposer ses services très bientôt.</b></h1>
-                <img style="width: 100%" src="{{asset('front/img_10.png')}}" alt="">
+               {!! $content->d_5 !!}
+                <img style="width: 100%" src="{{asset($content->image_10)}}" alt="">
             </div>
         </div>
     </div>
