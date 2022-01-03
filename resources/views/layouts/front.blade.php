@@ -64,9 +64,15 @@ $content = \App\Content::find(1);
         .p-100{
             padding: 100px;
         }
+        .container{
+            width: 80% !important;
+        }
         @media only screen and (max-width: 600px) {
             .p-100{
                 padding: 0px;
+            }
+            .container{
+                width: 100% !important;
             }
         }
         .buttons-play{
@@ -80,9 +86,7 @@ $content = \App\Content::find(1);
         .tf-icon-box{
             background-color: #d2ebd5;
         }
-        .container{
-            width: 80% !important;
-        }
+
     </style>
 </head>
 
