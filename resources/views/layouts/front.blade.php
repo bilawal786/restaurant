@@ -81,7 +81,7 @@ $content = \App\Content::find(1);
             background-color: #d2ebd5;
         }
         .container{
-            width: 100% !important;
+            width: 80% !important;
         }
     </style>
 </head>
