@@ -62,34 +62,34 @@ class GeneralSettingsController extends Controller
             $image1->move($destinationPath, $name);
             $content->header_image = 'logo/' . $name;
         }
-  /*      if ($request->hasfile('image_1')) {
-            $image1 = $request->file('image_1');
-            $name = time() . 'logo' . '.' . $image1->getClientOriginalExtension();
-            $destinationPath = 'logo/';
-            $image1->move($destinationPath, $name);
-            $content->image_1 = 'logo/' . $name;
-        }
-        if ($request->hasfile('image_2')) {
-            $image1 = $request->file('image_2');
-            $name = time() . 'logo' . '.' . $image1->getClientOriginalExtension();
-            $destinationPath = 'logo/';
-            $image1->move($destinationPath, $name);
-            $content->image_2 = 'logo/' . $name;
-        }
-        if ($request->hasfile('image_3')) {
-            $image1 = $request->file('image_3');
-            $name = time() . 'logo' . '.' . $image1->getClientOriginalExtension();
-            $destinationPath = 'logo/';
-            $image1->move($destinationPath, $name);
-            $content->image_3 = 'logo/' . $name;
-        }
-        if ($request->hasfile('image_4')) {
-            $image1 = $request->file('image_4');
-            $name = time() . 'logo' . '.' . $image1->getClientOriginalExtension();
-            $destinationPath = 'logo/';
-            $image1->move($destinationPath, $name);
-            $content->image_4 = 'logo/' . $name;
-        }*/
+          if ($request->hasfile('image_1')) {
+                    $image1 = $request->file('image_1');
+                    $name = time() . 'logo' . '.' . $image1->getClientOriginalExtension();
+                    $destinationPath = 'logo/';
+                    $image1->move($destinationPath, $name);
+                    $content->image_1 = 'logo/' . $name;
+                }
+        /*       if ($request->hasfile('image_2')) {
+             $image1 = $request->file('image_2');
+             $name = time() . 'logo' . '.' . $image1->getClientOriginalExtension();
+             $destinationPath = 'logo/';
+             $image1->move($destinationPath, $name);
+             $content->image_2 = 'logo/' . $name;
+         }
+         if ($request->hasfile('image_3')) {
+             $image1 = $request->file('image_3');
+             $name = time() . 'logo' . '.' . $image1->getClientOriginalExtension();
+             $destinationPath = 'logo/';
+             $image1->move($destinationPath, $name);
+             $content->image_3 = 'logo/' . $name;
+         }
+         if ($request->hasfile('image_4')) {
+             $image1 = $request->file('image_4');
+             $name = time() . 'logo' . '.' . $image1->getClientOriginalExtension();
+             $destinationPath = 'logo/';
+             $image1->move($destinationPath, $name);
+             $content->image_4 = 'logo/' . $name;
+         }*/
         if ($request->hasfile('image_5')) {
             $image1 = $request->file('image_5');
             $name = time() . 'logo' . '.' . $image1->getClientOriginalExtension();

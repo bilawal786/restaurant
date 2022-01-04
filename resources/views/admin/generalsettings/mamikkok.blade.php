@@ -189,6 +189,20 @@
                                     </div>
                                 </div>
                             </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="">Image</label>
+                                        <input type="file" name="image_1" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <img style="height: 100px" src="{{asset($content->image_1)}}" alt="">
+                                    </div>
+                                </div>
+                            </div>
 
                             <button type="submit" class="btn btn-primary">Sauvegarder</button>
                         </div>

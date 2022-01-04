@@ -147,7 +147,7 @@ $content = \App\Content::find(1);
                                             </a>
                                         </div>
                                         <div class="buttons-play">
-                                            <a style="color: black" href="{{$content->apple}}">
+                                            <a style="color: black" href="{{$gs->apple}}">
                                                 <button class="btn btn-outline-dark btn-icon-text">
                                                     <i class="fa fa-apple btn-icon-prepend mdi-36px"></i>
                                                     <span class="d-inline-block text-left">
@@ -155,7 +155,7 @@ $content = \App\Content::find(1);
                                                 </span>
                                                 </button>
                                             </a>
-                                            <a style="color: black" href="{{$content->android}}">
+                                            <a style="color: black" href="{{$gs->android}}">
                                                 <button class="btn btn-outline-dark btn-icon-text">
                                                     <i class="fa fa-android btn-icon-prepend mdi-36px"></i>
                                                     <span class="d-inline-block text-left">
@@ -192,7 +192,7 @@ $content = \App\Content::find(1);
                         <div class="widget widget-link widget-footer">
                             <h4 class="widget-title">Nos applications</h4>
                             <div class="template-demo mt-2">
-                                <a style="color: black" href="{{$content->apple}}">
+                                <a style="color: black" href="{{$gs->apple}}">
                                     <button class="btn btn-outline-dark btn-icon-text">
                                         <i class="fa fa-apple btn-icon-prepend mdi-36px"></i>
                                         <span class="d-inline-block text-left">
@@ -200,7 +200,7 @@ $content = \App\Content::find(1);
                                     </span>
                                     </button>
                                 </a>
-                                <a style="color: black" href="{{$content->android}}">
+                                <a style="color: black" href="{{$gs->android}}">
                                     <button class="btn btn-outline-dark btn-icon-text">
                                         <i class="fa fa-android btn-icon-prepend mdi-36px"></i>
                                         <span class="d-inline-block text-left">

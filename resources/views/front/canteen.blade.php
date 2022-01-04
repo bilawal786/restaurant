@@ -3,13 +3,13 @@
     <div class="container mt-5" id="canteen">
         <div class="row">
             <div class="col-md-12">
-                <img style="width: 100%" src="{{asset('front/assets/img/logo/logo.png')}}" alt="">
+                <img style="width: 100%" src="{{asset($content->image_1)}}" alt="">
                 <br>
                 <br>
                 <div class="form-contact color-bg-style4" style="margin-left: 0px">
                     <h4  style="overflow-wrap: break-word" class="heading"><b>Vous souhaitez mettre en place une cantine digitale
                             dans votre entreprise :</b></h4>
-                    <div class="text">Remplissezceformulaire:</div>
+                    <div class="text">Remplissez ce formulaire:</div>
                     @if(Session::has('message'))
                         <div class="alert">
                             <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
