@@ -126,10 +126,9 @@
                     <div class="swiper-wrapper" >
                         @foreach($pdf as $pd)
                         <div class="swiper-slide" style="background-color: #3b4043; border-radius: 10px; display: inline-block" >
-                            <div class="slider-item img-brand">
-                                <a style="width: 100%; display: inline-block;overflow-wrap: break-word; color: white; padding: 10px" href="{{asset($pd->pdf)}}">
-                                    <h3><b>{{$pd->title}}</b></h3>
-                                    <p><b>Voir le PDF</b></p>
+                            <div class="slider-item">
+                                <a style="width: 100%; display: inline-block;overflow-wrap: break-word; color: white; padding: 10px" href="{{route('meal.view', ['id' => $pd->id])}}">
+                                    <img src="{{asset($pd->pdf)}}" style="width: 100%" alt="">
                                 </a>
                             </div><!-- item-->
                         </div>
@@ -145,7 +144,7 @@
             <div class="col-md-12">
                 <div class="form-contact color-bg-style4" style="margin-left: 0px">
                     <h4 class="heading"><b>Le service vous interesse ?</b></h4>
-                    <div class="text">Soyez informe quand il sera disponible:</div>
+                    <div class="text">Soyez informé quand il sera disponible:</div>
                     @if(Session::has('message'))
                         <div class="alert">
                             <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>

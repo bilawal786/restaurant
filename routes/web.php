@@ -17,6 +17,7 @@ Route::get('/', 'FrontendController@index')->name('front.index');
 Route::get('/canteen', 'FrontendController@canteen')->name('front.canteen');
 Route::get('/miamihome', 'FrontendController@miamihome')->name('front.miamihome');
 Route::get('/butre', 'FrontendController@butre')->name('front.butre');
+Route::get('/meal/view/{id}', 'FrontendController@mealView')->name('meal.view');
 Route::post('/company/submit', 'FrontendController@companySubmit')->name('company.submit');
 Route::post('/contact/submit', 'FrontendController@contactSubmit')->name('contact.submit');
 

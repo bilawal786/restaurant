@@ -84,14 +84,14 @@
 
                         <div class="col-md-12">
                             <div class="form-group">
-                                <label for="title"><b>Titre</b><span class="text-danger">*</span></label>
-                                <input type="text"  name="title" required placeholder="Nom de catégorie" class="form-control">
+                                <label for="title"><b>Image</b><span class="text-danger">*</span></label>
+                                <input type="file" accept="image/*"  name="pdf" required placeholder="Nom de catégorie" class="form-control">
                             </div>
                         </div>
                         <div class="col-md-12">
                             <div class="form-group">
-                                <label for="title"><b>PDF</b><span class="text-danger">*</span></label>
-                                <input type="file" accept="application/pdf"  name="pdf" required class="form-control">
+                                <label for="title"><b>Description</b><span class="text-danger">*</span></label>
+                                <textarea name="title" class="form-control" id="summernote" cols="30" rows="10"></textarea>
                             </div>
                         </div>
 

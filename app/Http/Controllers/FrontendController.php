@@ -27,6 +27,10 @@ class FrontendController extends Controller
        $pdf = Pdf::all();
        return view('front.miamihome', compact('content', 'gs', 'pdf'));
    }
+   public function mealView($id){
+       $meal = Pdf::find($id);
+       return view('front.mealView', compact('meal'));
+   }
    public function butre(){
        $gs = GeneralSettings::find(1);
        $content = Content::find(1);
