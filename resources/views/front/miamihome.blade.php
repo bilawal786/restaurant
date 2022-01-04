@@ -119,7 +119,7 @@
             </div>
         </div>
     </div>
-    <div class="container" style="background-color: #202123; padding: 50px">
+    <div class="container mt-5" style="background-color: #202123; padding: 50px; border-radius: 20px">
         <div class="row">
             <div class="col-md-12">
                 <div class="swiper-container carousel-4">
