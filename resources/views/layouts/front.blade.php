@@ -75,11 +75,7 @@ $content = \App\Content::find(1);
                 width: 100% !important;
             }
             .page-title{
-                position: relative;
-                padding-top: 229px;
-                padding-bottom: 158px;
                 background:linear-gradient(150deg,  rgba(2,6,9,0.93) 33%,  rgba(2,6,9,0) 77%), url("{{asset('front/mob.jpg')}}") no-repeat fixed center center ;
-                z-index: 100;
                 background-size: cover;
             }
             #f-45{
