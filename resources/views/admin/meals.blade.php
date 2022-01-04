@@ -36,16 +36,16 @@
                                 <table id="example1" class="table table-bordered table-striped">
                                     <thead>
                                     <tr>
-                                        <th>Titre</th>
-                                        <th>Voir le PDF</th>
+                                        <th>Image</th>
+                                        <th>Description</th>
                                         <th>Supprimer</th>
                                     </tr>
                                     </thead>
                                     <tbody>
                                     @foreach($meals as $row)
                                         <tr>
-                                            <td>{{$row->title}}</td>
-                                            <td><a target="_blank" href="{{asset($row->pdf)}}">Voir le PDF</a></td>
+                                            <td><img src="{{asset($row->pdf)}}" style="height: 40px" alt=""></td>
+                                            <td>{!! $row->title !!}</td>
                                             <td>
                                                 <a href="{{route('meal.delete', ['id' => $row->id])}}"><button class="btn btn-danger btn-sm">Supprimer</button></a>
                                             </td>

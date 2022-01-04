@@ -58,53 +58,6 @@
                                     </div>
                                 </div>
                             </div>
-<!--                            <hr>
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label for="">Image 1</label>
-                                        <input type="file" name="image_1" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <img style="height: 100px" src="{{asset($content->image_1)}}" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label for="">Image 2</label>
-                                        <input type="file" name="image_2" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <img style="height: 100px" src="{{asset($content->image_2)}}" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label for="">Image 3</label>
-                                        <input type="file" name="image_3" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <img style="height: 100px" src="{{asset($content->image_3)}}" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label for="">Image 4</label>
-                                        <input type="file" name="image_4" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <img style="height: 100px" src="{{asset($content->image_4)}}" alt="">
-                                    </div>
-                                </div>
-                            </div>-->
                             <hr>
                             <div class="row">
                                 <div class="col-md-2">
@@ -176,71 +129,6 @@
                                     </div>
                                 </div>
                             </div>
-<!--                            <hr>
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label for="">Titre</label>
-                                        <input type="text" class="form-control" name="h_3" value="{{$content->h_3}}">
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label for="">Image</label>
-                                        <input type="file" class="form-control" name="image_9">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="">Description</label>
-                                        <textarea name="d_5" class="form-control" cols="30" rows="5">{{$content->d_5}}</textarea>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="">Titre</label>
-                                        <input type="text" class="form-control" name="h_4" value="{{$content->h_4}}">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="">Description</label>
-                                        <textarea name="d_6" class="form-control" cols="30" rows="5">{{$content->d_6}}</textarea>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label for="">Titre</label>
-                                        <input type="text" class="form-control" name="h_5" value="{{$content->h_5}}">
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label for="">Image</label>
-                                        <input type="file" class="form-control" name="image_10">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="">Description</label>
-                                        <textarea name="d_7" class="form-control" cols="30" rows="5">{{$content->d_7}}</textarea>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label for="">Titre</label>
-                                        <input type="text" class="form-control" name="h_6" value="{{$content->h_6}}">
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label for="">Titre</label>
-                                        <input type="text" class="form-control" name="h_7" value="{{$content->h_7}}">
-                                    </div>
-                                </div>
-                            </div>-->
 
                             <button type="submit" class="btn btn-primary">Sauvegarder</button>
                         </div>
